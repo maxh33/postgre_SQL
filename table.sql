@@ -1,6 +1,6 @@
 -- Criação da tabela Customer
 CREATE TABLE Customer (
-    CustomerID INT AUTO_INCREMENT PRIMARY KEY,
+    CustomerID SERIAL PRIMARY KEY,
     FirstName VARCHAR(50) NOT NULL,
     LastName VARCHAR(50) NOT NULL,
     Email VARCHAR(100) NOT NULL UNIQUE,
@@ -11,7 +11,7 @@ CREATE TABLE Customer (
 
 -- Criação da tabela Product
 CREATE TABLE Product (
-    ProductID INT AUTO_INCREMENT PRIMARY KEY,
+    ProductID SERIAL PRIMARY KEY,
     ProductName VARCHAR(100) NOT NULL,
     Description TEXT,
     Price DECIMAL(10,2) NOT NULL,
@@ -20,7 +20,7 @@ CREATE TABLE Product (
 
 -- Criação da tabela Order
 CREATE TABLE `Order` (
-    OrderID INT AUTO_INCREMENT PRIMARY KEY,
+    OrderID SERIAL PRIMARY KEY,
     CustomerID INT,
     OrderDate DATE NOT NULL,
     Total DECIMAL(10,2) NOT NULL,
@@ -29,7 +29,7 @@ CREATE TABLE `Order` (
 
 -- Criação da tabela OrderItem
 CREATE TABLE OrderItem (
-    OrderItemID INT AUTO_INCREMENT PRIMARY KEY,
+    OrderItemID SERIAL PRIMARY KEY,
     OrderID INT,
     ProductID INT,
     Quantity INT NOT NULL,
