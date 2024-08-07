@@ -19,7 +19,7 @@ CREATE TABLE Product (
 );
 
 -- Criação da tabela Order
-CREATE TABLE `Order` (
+CREATE TABLE "Order" (
     OrderID SERIAL PRIMARY KEY,
     CustomerID INT,
     OrderDate DATE NOT NULL,
@@ -34,6 +34,6 @@ CREATE TABLE OrderItem (
     ProductID INT,
     Quantity INT NOT NULL,
     UnitPrice DECIMAL(10,2) NOT NULL,
-    FOREIGN KEY (OrderID) REFERENCES `Order`(OrderID),
+    FOREIGN KEY (OrderID) REFERENCES "Order"(OrderID),
     FOREIGN KEY (ProductID) REFERENCES Product(ProductID)
 );
