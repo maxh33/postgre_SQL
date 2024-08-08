@@ -7,6 +7,9 @@ INSERT INTO Product (ProductName, Description, Price, Stock)
 VALUES 
 ('Laptop', 'High-end gaming laptop', 1500.00, 10),
 ('Mouse', 'Wireless mouse', 25.00, 50);
+('Keyboard', 'Mechanical keyboard', 75.00, 30),
+('Monitor', '4K Monitor', 300.00, 20),
+('Printer', 'Laser printer', 200.00, 15);
 
 INSERT INTO "Order" (CustomerID, OrderDate, Total) 
 VALUES 
