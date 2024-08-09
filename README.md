@@ -35,12 +35,12 @@ Indexing is a crucial step in optimizing query performance. The following SQL fi
 
 The performance difference with and without the index:
 
-    Before Index: The query used a "Sequential Scan," which involved scanning through all the rows in the table. This resulted in higher execution times, especially with large datasets.
+Before Index: The query used a "Sequential Scan," which involved scanning through all the rows in the table. This resulted in higher execution times, especially with large datasets.
 
 ![Query Performance Before Index](https://github.com/maxh33/postgre_SQL/blob/main/BeforeIndex.png)
 
 
-    After Index: The query used an "Index Scan," which directly accessed the required row using the index. This significantly reduced the execution time.
+After Index: The query used an "Index Scan," which directly accessed the required row using the index. This significantly reduced the execution time.
 
 ![Query Performance After Index](https://github.com/maxh33/postgre_SQL/blob/main/AfterIndex.png)
 
@@ -59,4 +59,5 @@ Indexes are powerful tools in PostgreSQL for improving the performance of data r
 ### References
 
 [PostgreSQL Documentation](https://www.postgresql.org/docs/)
+
 [Indexing in PostgreSQL](https://www.postgresql.org/docs/current/indexes.html)
